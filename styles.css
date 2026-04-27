@@ -348,15 +348,47 @@ img { max-width: 100%; display: block; }
 }
 .ind-features i { color: var(--gold); font-size: .75rem; width: 14px; flex-shrink: 0; }
 
-.ind-price {
-  font-size: .88rem; color: var(--muted);
+.ind-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   border-top: 1px solid var(--border);
-  padding-top: 18px; margin-top: 4px;
+  padding-top: 18px;
+  margin-top: 4px;
+}
+
+.ind-price {
+  font-size: .88rem;
+  color: var(--muted);
 }
 .ind-price strong {
   font-size: 1.1rem; font-weight: 800;
   background: var(--gradient);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.ind-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,.35);
+  padding: .4rem .85rem;
+  border-radius: 5px;
+  transition: background .2s, color .2s, border-color .2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ind-demo i { font-size: .65rem; }
+.ind-demo:hover {
+  background: rgba(201,168,76,.12);
+  border-color: var(--gold);
+  color: var(--gold-lt);
 }
 
 /* ============================================================
